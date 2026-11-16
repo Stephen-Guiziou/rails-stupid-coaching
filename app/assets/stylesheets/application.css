@@ -8,3 +8,149 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+/* MIAMI VICE - STUPID COACHING */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Quicksand:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 3em 1,5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #ff4ecd, #7928ca, #00d4ff);
+  border-radius: 20px;
+}
+
+.jean-claude {
+  display: block;
+  width: 20em;
+  max-width: 100%;
+  margin: 2em auto;
+  border: 5px solid #ff4ecd;
+  border-radius: 20px;
+  box-shadow: 0 0 2em #ff4ecd;
+  transform: rotate(-2deg);
+}
+
+.container {
+  width: 100%;
+  max-width: 40em;
+  padding: 3em;
+  text-align: center;
+  background: rgba(20, 10, 50, 0.92);
+  border: 5px solid #ff4ecd;
+  border-radius: 1,5em;
+  box-shadow: 0 0 20px #ff4ecd, 0 0 40px #00d4ff;
+}
+
+h1 {
+  margin: 0 0 1,5em;
+  font-family: 'Righteous', cursive;
+  font-size: 2,5em;
+  color: #ff4ecd;
+  text-shadow: 4px 4px #00d4ff;
+}
+
+p {
+  margin: 1,5em 0;
+  line-height: 1.7;
+}
+
+.subtitle {
+  color: #00f5ff;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+form label {
+  color: #ffdf5d;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 30em;
+  padding: 1em;
+  border: 4px solid #00f5ff;
+  border-radius: 30px;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff4ecd, #0d4fcb);
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 1,25em;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #dbad19;
+}
+
+.question {
+  margin: 2em 0;
+  padding: 1,5em;
+  line-height: 1.7;
+  background: rgba(0, 245, 255, 0.12);
+  border-left: 4px solid #00f5ff;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.answer {
+  margin: 2em 0;
+  padding: 1,5em;
+  line-height: 1.7;
+  background: rgba(255, 78, 205, 0.15);
+  border: 2px solid #ff4ecd;
+  border-radius: 15px;
+  color: #ffdf5d;
+  font-size: 1,25em;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+a {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 1em 1,5em;
+  color: #00f5ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffdf5d;
+}
+
+@media (max-width: 32em) {
+  .container {
+    padding: 1,5em 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}

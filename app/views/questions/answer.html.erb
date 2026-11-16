@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Jean Claude Says...</h1>
+
+  <div class="question"><%= @question %></div>
+
+  <div class="answer"><%= @answer %></div>
+  <% if @question == "Jean Claude je t'aime" %>
+    <%= image_tag "jcvd.jpg", class: "jean-claude" %>
+  <% end %>
+
+  <%= link_to "ASK ANOTHER QUESTION", ask_path %>
+</div>
